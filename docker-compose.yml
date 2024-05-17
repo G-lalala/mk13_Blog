@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  nextjs:
+    build:
+      context: .
+      dockerfile: ./frontend/docker/Dockerfile
+    ports:
+      - "3001:3000" # Next.jsのデフォルトポートを3000にマッピングします。
+    volumes:
+      - ./frontend:/app # このディレクトリをNext.jsアプリのルートディレクトリとしてマウントします。
+    command: sh ./docker/next_boot.sh # Next.jsの開発サーバーを起動するコマンドです。package.jsonに"dev"スクリプトが必要です。
