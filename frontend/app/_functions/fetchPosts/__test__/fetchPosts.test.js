@@ -1,5 +1,5 @@
 import { fetchPosts } from '../fetchPosts'
-import fs, { Dirent } from 'fs'
+import fs from 'fs'
 
 // fsモジュールをモック
 jest.mock('fs')
