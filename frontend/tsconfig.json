@@ -27,7 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/api/fetchVoiceVox.js"
+    "app/api/fetchVoiceVox.js",
+    "app/_functions/fetchPosts/__test__/fetchPosts.test.js"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "out", ".next", "**/*.test.ts", "**/*.test.tsx"]
 }
